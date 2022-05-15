@@ -7,7 +7,7 @@ const Home = () => {
   // use useQuery hook to make query request
   const { loading, data } = useQuery(QUERY_THOUGHTS); // returns loading status and the actual data
   const thoughts = data?.thoughts || []; // checks if the data exists (if it has been returned yet), if so, then retrieve data.thoughts and store in a variable
-  console.log(thoughts);
+  // console.log(thoughts);
 
   return (
     <main>
